@@ -1,0 +1,27 @@
+{
+  "name": "TerminalCMS",
+  "version": "4.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node start.js",
+    "debug": "node debug.js",
+    "client": "npm run start --prefix Client",
+    "client:install": "npm install --prefix Client",
+    "client:build": "npm run build --prefix Client",
+    "dev": "cross-env NODE_ENV=development \"npm run debug\" \"npm run client\""
+  },
+  "author": "ReXDeep",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "cookie-parser": "^1.4.5",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.2",
+    "socket.io": "^4.1.2"
+  }
+}
